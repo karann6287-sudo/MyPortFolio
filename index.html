@@ -1,44 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SURVEY FORM</title>
-</head>
-<body>
-    <title>Survey Form</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<div class="form-content">
-    <h2>Event Feedback Form</h2>
+<header>
+    <nav>
+        <h2 class="logo">MyPortfolio</h2>
+        <ul class="nav-links">
+            <li><button><a href="">Home</a></button></li>
+            <li><button><a href="#about">About</a></button></li>
+            <li><button><a href="#projects">Projects</a></button></li>
+            <li><button><a href="#contacts">Contact</a></button></li>
+        </ul>
+    </nav>
+</header>
 
-    <form id="survey">
-        <label>Name:</label>
-        <input type="text" id="name" required>
+<section class="hero">
+    <h1>Hello, I am Karan Verma, from Electrical department.</h1>
+    <p>Currently learning DSA and Web Development.</p>
+    <a href="https://karann6287-sudo.github.io/visionmanit/"><button>View Project</button></a>
+    <img src="pic.jpeg" alt="Karan Verma" height="200px" width="150px">
+</section>
 
-        <label>Rating (1-5):</label>
-        <select id="rating" required>
-            <option value="">Select</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
+<section class="about" id="about">
+    <fieldset>
+        <legend><b>About Me</b></legend>
+    <p>I am Karan Verma,having a strong interest in programming and web development. I am currently learning Data Structures & Algorithms while building projects using HTML and CSS to strengthen my development skills. I enjoy solving problems, learning new technologies, and continuously improving my technical knowledge.</p>
+</fieldset>
+</section>
 
-        <label>Feedback:</label>
-        <textarea id="feedback" required></textarea>
+<section class="skills">
+   <h3>Skills</h3>
+    <ul>  
+        <li>Web Development</li>
+        <li>DSA Problem Solving </li>
+        <li>Singing :)</li>
+    </ul>
+</section>
+<section class="languages">
+    <h3>Programming Languages</h3>
+    <ul>
+        <li>C++</li>
+        <li>C</li>
+    </ul>
+</section>
 
-        <button type="submit">Submit</button>
-    </form>
+<section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <div class="card">Personal Portfolio</div>
+        <div class="card">Society Landing Page</div>
+        <div class="card">Coming Soon</div>
+    </div>
+</section>
+<section class ="contacts" id="contacts">
+    <h3>Contacts</h3><br>
+    <ul>
+        <li>Email: karann6287@gmail.com</li><br>
+          <a href="https://www.linkedin.com/company/vision-manit/?originalSubdomain=in" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+</section>
 
-    <p id="message"></p>
-</div>
-<script src="script.js"></script>
 
+<footer>
+    <p>© 2026 Karan Verma</p>
+</footer>
 
 </body>
 </html>
