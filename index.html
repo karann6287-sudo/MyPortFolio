@@ -4,50 +4,68 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
 <header>
     <nav>
-        <h2 class="logo">MyPortfolio</h2>
-        <ul class="nav-links">
-            <li><button><a href="">Home</a></button></li>
-            <li><button><a href="#about">About</a></button></li>
-            <li><button><a href="#projects">Projects</a></button></li>
-            <li><button><a href="#contacts">Contact</a></button></li>
+       <a href="https://ka-ran.live"><img src="111-1112824_portfolio-png-removebg-preview.png" alt="MyPortfolio" height="70" width="200"></a>      
+            <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
         </ul>
+
+        <button id="theme-toggle">🌙</button>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>Hello, I am Karan Verma, from Electrical department.</h1>
-    <p>Currently learning DSA and Web Development.</p>
-    <a href="https://karann6287-sudo.github.io/visionmanit/"><button>View Project</button></a>
-    <img src="pic.jpeg" alt="Karan Verma" height="200px" width="150px">
+    <img src="pic.jpeg" alt="Karan Verma" height="200" width="150">
+    <h1>Hi, I'm Karan Verma.</h1>
+    <p>Competitive Programmer | Web Developer</p>
+    <p>EE'29 NIT BHOPAL</p>
+    <a href="https://karann6287-sudo.github.io/Astro_Alliance/" target="_blank">
+        <button>View Project</button>
+    </a>
 </section>
 
 <section class="about" id="about">
-    <fieldset>
-        <legend><b>About Me</b></legend>
-    <p>I am Karan Verma,having a strong interest in programming and web development. I am currently learning Data Structures & Algorithms while building projects using HTML and CSS to strengthen my development skills. I enjoy solving problems, learning new technologies, and continuously improving my technical knowledge.</p>
-</fieldset>
+    <h2>About Me</h2><br><br>
+    <p>
+        I am Karan Verma,having a strong interest in programming and web development. <br>
+         I am currently learning Data Structures & Algorithms while building projects using HTML, CSS and Javascript to strengthen my development. <br> I enjoy solving problems, learning new technologies, and continuously improving my technical knowledge.
+    </p>
+</section>
+    <div class="education">
+        <h2>Education</h2>
+        <div class="card">
+            <h3 style="font-weight: 500;">B.Tech Electrical Engineering</h3>
+            <p>NIT Bhopal</p>
+            <p>2025 – 2029</p>
+        </div>
+    </div>
 </section>
 
 <section class="skills">
-   <h3>Skills</h3>
-    <ul>  
-        <li>Web Development</li>
-        <li>DSA Problem Solving </li>
-        
-    </ul>
+    <h2>Skills</h2>
+    <div class="skillcard">
+        <div class="card">Web Development</div>
+        <div class="card">Data Structures</div>
+        <div class="card">Problem Solving</div>
+    </div>
 </section>
+
 <section class="languages">
-    <h3>Programming Languages</h3>
-    <ul>
-        <li>C++</li>
-        <li>C</li>
-    </ul>
+    <h2>Languages</h2>
+    <div class="languagecard">
+        <div class="card">C++</div>
+        <div class="card">C Language</div>
+        <div class="card">JavaScript</div>
+    </div>
 </section>
 
 <section class="projects" id="projects">
@@ -58,19 +76,29 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         <div class="card">Event Survey Form</div>
     </div>
 </section>
-<section class ="contacts" id="contacts">
-    <h3>Contacts</h3><br>
-    <ul>
-        <li>Email: karann6287@gmail.com</li><br>
-          <a href="https://www.linkedin.com/company/vision-manit/?originalSubdomain=in" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-</section>
-
+<div class="experience">
+    <h2>Experience</h2>
+    <div class="card">
+        <h3 style="font-weight: 500;">Web Developer</h3>
+        <p>StarLab NITB</p>
+        <p>Since Feb 2026</p>
+</div>
+<br><br><br><br><br>
 
 <footer>
+    <h3 style="font-size: 18px;" id="contacts">My Contacts</h3>
+    <ul>
+        <li>Email: karann6287@gmail.com</li>
+        <li>
+            <a href="https://www.linkedin.com/in/karan-verma-48262a363/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </li>
+    </ul>
     <p>© 2026 Karan Verma</p>
 </footer>
 
+<script src="toggle.js"></script>
+
 </body>
 </html>
-
