@@ -27,6 +27,13 @@ body.dark-mode .card {
     background-color: #334155;
     color: white;
 }
+/* .body.dark-mode .edu-card, .body.dark-mode .exp-card {
+    background-color: #334155;
+    color: white; */
+    .body.dark-mode .edu-text, .body.dark-mode .exp-text {
+    background-color: #334155;
+    color: white;
+} */
 
 body.dark-mode footer {
     background-color: black;
@@ -208,8 +215,7 @@ footer a:hover{
 }
 .projects{
     margin-bottom: 50px;
-}
-.education .card,.experience .card{
+}  .education .card,.experience .card{
     background:white;
     padding:20px;
     border-radius:10px;
@@ -226,4 +232,38 @@ footer a:hover{
     text-align: center;
     font-weight: 500;
     margin: 50px;
+}
+.edu-card, .exp-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: fit-content;
+    margin: 20px auto;
+    height: 150px;
+    color: #000000;
+}
+
+.edu-text {
+    line-height: 30px;
+} 
+.exp-text{
+    line-height: 32px;
+}
+.exp-card{
+    width: 400px;
+    height: 180px;
+    transition: 0.3s;
+    
+}
+.edu-card{
+    transition: 0.3s;
+}
+.edu-card:hover, .exp-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
