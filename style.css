@@ -267,3 +267,10 @@ footer a:hover{
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
+body.dark-mode .edu-card, body.dark-mode .exp-card {
+    background-color: #334155;
+    color: white;
+}
+body.dark-mode .manimg{
+    background-color: #334155;
+}
